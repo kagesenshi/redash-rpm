@@ -14,9 +14,9 @@ Group:		Applications/Publishing
 License:	BSD
 URL:		http://redash.io
 Source0:	https://github.com/getredash/redash/archive/v%{redash_version}.tar.gz
-Source1:    %{name}-runner.py
-Source2:    %{name}.cfg
-Source3:    %{name}-supervisor.conf
+Source1:    https://raw.githubusercontent.com/kagesenshi/redash-rpm/master/%{name}-runner.py
+Source2:    https://raw.githubusercontent.com/kagesenshi/redash-rpm/master/%{name}.cfg
+Source3:    https://raw.githubusercontent.com/kagesenshi/redash-rpm/master/%{name}-supervisor.conf
 BuildRequires: python-virtualenv cyrus-sasl-devel openssl-devel
 BuildRequires: postgresql-devel python-devel mariadb-devel freetds-devel
 BuildRequires: xmlsec1 xmlsec1-devel npm gcc gcc-c++
